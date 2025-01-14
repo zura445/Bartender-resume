@@ -137,7 +137,12 @@ function App() {
             597 000 540
           </a>
           <p className="text-lg mt-4 underline underline-offset-4">Address</p>
-          <p className="mt-4">Vladimer lobjanidze street, 0113 Tbilisi</p>
+          <a
+            href="https://www.google.com/maps/place/2+Ekimi+Ln,+T'bilisi/@41.6842858,44.8395755,910m/data=!3m1!1e3!4m9!1m2!2m1!1sVladimer+Lobjanidze+St+%232!3m5!1s0x40440c4b691ccd09:0x89d497c86cdf4a23!8m2!3d41.6843157!4d44.8426564!16s%2Fg%2F11c4cyfrl8?entry=ttu&g_ep=EgoyMDI1MDExMC4wIKXMDSoASAFQAw%3D%3D"
+            className="mt-4"
+          >
+            Vladimer lobjanidze street, Tbilisi
+          </a>
         </div>
       </div>
     </div>
