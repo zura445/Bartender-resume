@@ -126,13 +126,18 @@ function App() {
           <p className="text-lg mt-4 underline underline-offset-4">
             Email address
           </p>
-          <p>zuratetra@gmail.com</p>
+          <a href="mailto:zuratetra@gmail.com?subject=The%20subject%20of%20the%20mail mt-4">
+            zuratetra@gmail.com
+          </a>
+
           <p className="text-lg mt-4 underline underline-offset-4">
             Phone number
           </p>
-          <p>+995597000540</p>
+          <a className="cursor-pointer mt-4" href="tel: +995597000540">
+            597 000 540
+          </a>
           <p className="text-lg mt-4 underline underline-offset-4">Address</p>
-          <p>Vladimer lobjanidze street, 0113 Tbilisi</p>
+          <p className="mt-4">Vladimer lobjanidze street, 0113 Tbilisi</p>
         </div>
       </div>
     </div>
