@@ -12,7 +12,7 @@ function App() {
           <p className="mt-4 font-bold text-xl">Bartender</p>
           <div className="mt-10 w-full max-w-screen-xl">
             {/* ინფორმაცია განათლებისა და გამოცდილების შესახებ */}
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-10">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 bg-black p-10 opacity-90 rounded-lg">
               {/* Education და Skills */}
               <div>
                 <h1 className="flex justify-center text-2xl font-semibold">
@@ -38,23 +38,23 @@ function App() {
                 <h1 className="flex justify-center mt-6 text-2xl font-semibold">
                   Skills
                 </h1>
-                <div className="grid grid-cols-2 gap-8 mt-4 max-w-[600px]">
+                <div className="grid grid-cols-2 gap-8 mt-4">
                   <p>Beverage Preparation</p>
-                  <p>Excellent</p>
+                  <p className="text-center">Excellent</p>
                   <p>Customer Relations</p>
-                  <p>Excellent</p>
+                  <p className="text-center">Excellent</p>
                   <p>Adherence to Hygiene Standards</p>
-                  <p>Excellent</p>
+                  <p className="text-center">Excellent</p>
                   <p>Fast Work</p>
-                  <p>Excellent</p>
+                  <p className="text-center">Excellent</p>
                   <p>Cash Handling</p>
-                  <p>Excellent</p>
+                  <p className="text-center">Excellent</p>
                   <p>Inventory Management</p>
-                  <p>Excellent</p>
+                  <p className="text-center">Excellent</p>
                   <p>Conflict Resolution</p>
-                  <p>Excellent</p>
+                  <p className="text-center">Excellent</p>
                   <p>Teamwork</p>
-                  <p>Excellent</p>
+                  <p className="text-center">Excellent</p>
                 </div>
               </div>
               {/* Employment */}
@@ -121,28 +121,23 @@ function App() {
         style={{ backgroundImage: "url(/image/bar2.jpg)" }}
       >
         <div className="absolute inset-0 bg-black bg-opacity-50"></div>
-        <div className="relative flex flex-col justify-center items-center text-white px-4 py-10">
-          <h1 className="text-4xl font-bold mt-6">Personal details</h1>
-          <p className="text-lg mt-4 underline underline-offset-4">
-            Email address
-          </p>
-          <a href="mailto:zuratetra@gmail.com?subject=The%20subject%20of%20the%20mail mt-4">
-            zuratetra@gmail.com
-          </a>
+        <div className="relative flex flex-col justify-center items-center text-white px-4 ">
+          <div className="py-10 bg-black opacity-90 flex flex-col items-center px-10 mt-10 rounded-md">
+            <h1 className="text-4xl font-bold mt-4">Personal details</h1>
+            <p className="text-lg mt-4 underline underline-offset-4">
+              Email address
+            </p>
+            <a href="mailto:zuratetra@gmail.com?subject=The%20subject%20of%20the%20mail mt-4">
+              zuratetra@gmail.com
+            </a>
 
-          <p className="text-lg mt-4 underline underline-offset-4">
-            Phone number
-          </p>
-          <a className="cursor-pointer mt-4" href="tel: +995597000540">
-            597 000 540
-          </a>
-          <p className="text-lg mt-4 underline underline-offset-4">Address</p>
-          <a
-            href="https://www.google.com/maps/place/2+Ekimi+Ln,+T'bilisi/@41.6842858,44.8395755,910m/data=!3m1!1e3!4m9!1m2!2m1!1sVladimer+Lobjanidze+St+%232!3m5!1s0x40440c4b691ccd09:0x89d497c86cdf4a23!8m2!3d41.6843157!4d44.8426564!16s%2Fg%2F11c4cyfrl8?entry=ttu&g_ep=EgoyMDI1MDExMC4wIKXMDSoASAFQAw%3D%3D"
-            className="mt-4"
-          >
-            Vladimer lobjanidze street, Tbilisi
-          </a>
+            <p className="text-lg mt-4 underline underline-offset-4">
+              Phone number
+            </p>
+            <a className="cursor-pointer mt-4" href="tel: +995597000540">
+              597 000 540
+            </a>
+          </div>
         </div>
       </div>
     </div>
