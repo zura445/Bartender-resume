@@ -1,3 +1,5 @@
+import educationData from "../src/educationData.json";
+
 function App() {
   return (
     <div>
@@ -19,7 +21,14 @@ function App() {
                   Education
                 </h1>
                 <div className="grid grid-cols-2 gap-8 mt-4">
-                  <p>Mar 2013 - Nov 2013</p>
+                  {educationData.map((educationData, index) => (
+                    <div className="" key={index}>
+                      <p>{educationData.date}</p>
+                      <div className="">{educationData.position}</div>
+                      <p>{educationData.company}</p>
+                    </div>
+                  ))}
+                  {/* <p>Mar 2013 - Nov 2013</p>
                   <div>
                     <div className="">Bartender</div>
                     <p>College "ICARUS", Tbilisi</p>
@@ -33,7 +42,7 @@ function App() {
                   <div>
                     <div className="">Restaurant Management</div>
                     <p>College "ICARUS", Tbilisi</p>
-                  </div>
+                  </div> */}
                 </div>
                 <h1 className="flex justify-center mt-6 text-2xl font-semibold">
                   Skills
