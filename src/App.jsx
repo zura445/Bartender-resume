@@ -1,6 +1,8 @@
-import educationData from "../src/educationData.json";
+import education from "../src/educationData.json";
 
 function App() {
+  const { education: educationItems } = education[0];
+
   return (
     <div>
       {/* მთავარი სექცია ფონის სურათით */}
@@ -20,30 +22,15 @@ function App() {
                 <h1 className="flex justify-center text-2xl font-semibold">
                   Education
                 </h1>
-                <div className="grid grid-cols-2 gap-8 mt-4">
-                  {educationData.map((educationData, index) => (
-                    <div className="" key={index}>
-                      <p>{educationData.date}</p>
-                      <div className="">{educationData.position}</div>
-                      <p>{educationData.company}</p>
+                {educationItems.map((educationItem, index) => (
+                  <div key={index} className="grid grid-cols-2 mt-4">
+                    <p>{educationItem.date}</p>
+                    <div className="">
+                      <div>{educationItem.position}</div>
+                      <p>{educationItem.company}</p>
                     </div>
-                  ))}
-                  {/* <p>Mar 2013 - Nov 2013</p>
-                  <div>
-                    <div className="">Bartender</div>
-                    <p>College "ICARUS", Tbilisi</p>
                   </div>
-                  <p>Mar 2014 - Nov 2014</p>
-                  <div>
-                    <div className="">Sommelier</div>
-                    <p>College "ICARUS", Tbilisi</p>
-                  </div>
-                  <p>Mar 2015 - Nov 2015</p>
-                  <div>
-                    <div className="">Restaurant Management</div>
-                    <p>College "ICARUS", Tbilisi</p>
-                  </div> */}
-                </div>
+                ))}
                 <h1 className="flex justify-center mt-6 text-2xl font-semibold">
                   Skills
                 </h1>
