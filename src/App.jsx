@@ -1,4 +1,5 @@
 import Education from "./components/Education";
+import Skills from "./components/Skills";
 
 function App() {
   return (
@@ -16,27 +17,8 @@ function App() {
               {/* Education და Skills */}
               <div>
                 <Education />
-                <h1 className="flex justify-center mt-6 text-2xl font-semibold">
-                  Skills
-                </h1>
-                <div className="grid grid-cols-2 gap-8 mt-4">
-                  <p>Beverage Preparation</p>
-                  <p className="text-center">Excellent</p>
-                  <p>Customer Relations</p>
-                  <p className="text-center">Excellent</p>
-                  <p>Adherence to Hygiene Standards</p>
-                  <p className="text-center">Excellent</p>
-                  <p>Fast Work</p>
-                  <p className="text-center">Excellent</p>
-                  <p>Cash Handling</p>
-                  <p className="text-center">Excellent</p>
-                  <p>Inventory Management</p>
-                  <p className="text-center">Excellent</p>
-                  <p>Conflict Resolution</p>
-                  <p className="text-center">Excellent</p>
-                  <p>Teamwork</p>
-                  <p className="text-center">Excellent</p>
-                </div>
+
+                <Skills />
               </div>
               {/* Employment */}
               <div>
