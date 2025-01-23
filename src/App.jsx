@@ -1,11 +1,8 @@
-import education from "../src/educationData.json";
+import Education from "./components/Education";
 
 function App() {
-  const { education: educationItems } = education[0];
-
   return (
     <div>
-      {/* მთავარი სექცია ფონის სურათით */}
       <div
         className="relative w-full min-h-screen bg-cover bg-center"
         style={{ backgroundImage: "url(/image/bar1.jpg)" }}
@@ -15,22 +12,10 @@ function App() {
           <h1 className="text-4xl font-bold mt-10">Zura Tetrashvili</h1>
           <p className="mt-4 font-bold text-xl">Bartender</p>
           <div className="mt-10 w-full max-w-screen-xl">
-            {/* ინფორმაცია განათლებისა და გამოცდილების შესახებ */}
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 bg-black p-10 opacity-90 rounded-lg">
               {/* Education და Skills */}
               <div>
-                <h1 className="flex justify-center text-2xl font-semibold">
-                  Education
-                </h1>
-                {educationItems.map((educationItem, index) => (
-                  <div key={index} className="grid grid-cols-2 mt-4">
-                    <p>{educationItem.date}</p>
-                    <div className="">
-                      <div>{educationItem.position}</div>
-                      <p>{educationItem.company}</p>
-                    </div>
-                  </div>
-                ))}
+                <Education />
                 <h1 className="flex justify-center mt-6 text-2xl font-semibold">
                   Skills
                 </h1>
