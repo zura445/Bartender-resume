@@ -3,7 +3,7 @@ import skillsList from "../data/skillsData.json";
 function Skills() {
   return (
     <div>
-      <h1 className="flex justify-center mt-6 text-2xl font-semibold">
+      <h1 className="flex justify-center mt-10 text-2xl font-semibold">
         Skills
       </h1>
       {skillsList.map((skillsItem, index) => (
